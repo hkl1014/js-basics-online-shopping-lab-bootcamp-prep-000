@@ -38,7 +38,7 @@ function total() {
   var total=0;
   for(let i=cart.length;i>0;i--){
     var v=Object.values(cart[cart.length-i]);
-    total+=parseInt(v);
+    total+=v;
   }
   return total
 }
