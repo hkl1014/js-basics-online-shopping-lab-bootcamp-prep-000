@@ -32,6 +32,9 @@ function viewCart() {
     if(cart.length-i==(cart.length-2)){
       string1+=` and `
     }
+    if(cart.length-i<=cart.length-3){
+      string1+=`, `
+    }
   }
 string1+=`.`
   console.log(string1);
