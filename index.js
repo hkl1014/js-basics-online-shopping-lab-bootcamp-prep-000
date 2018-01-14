@@ -29,7 +29,7 @@ function viewCart() {
   if(cart.length==0){console.log("Your shopping cart is empty.")};
 
   for(let i=cart.length;i>0;i--){
-    string1+=`${Object.keys(cart)[cart.length-i]} at $${cart[cart.length-i][Object.keys(cart)[cart.length-i]]}`
+    string1+=`${cart[cart.length-i][Object.keys(cart[cart.length-i])]}`
   }
 }
 
