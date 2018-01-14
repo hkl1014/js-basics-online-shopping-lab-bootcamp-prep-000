@@ -24,12 +24,14 @@ return cart
 function viewCart() {
   // write your code here
   var string1 ="In your cart, you have ";
-    console.log(string1);
+  
   if(cart.length==0){console.log("Your shopping cart is empty.")};
 
   for(let i=cart.length;i>0;i--){
     string1+=`${Object.keys(cart[cart.length-i])} at $${Object.values(cart[cart.length-i])}.`
   }
+
+  console.log(string1);
 }
 
 function total() {
