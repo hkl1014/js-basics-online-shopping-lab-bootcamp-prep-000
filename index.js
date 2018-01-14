@@ -35,7 +35,7 @@ function viewCart() {
     if(cart.length-i==(cart.length-2)){
       string1+=` and `
     }
-    
+
   }
 string1+=`.`
   console.log(string1);
