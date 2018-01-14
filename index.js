@@ -29,7 +29,7 @@ function viewCart() {
 
   for(let i=cart.length;i>0;i--){
     string1+=`${Object.keys(cart[cart.length-i])} at $${Object.values(cart[cart.length-i])}`
-    if(cart.length-i<=cart.length-3){
+    if(i<1){
       string1+=`, `
     }
     if(cart.length-i==(cart.length-2)){
