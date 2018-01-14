@@ -32,6 +32,9 @@ function viewCart() {
     if(cart.length-i<(cart.length-1)&&cart.length!=2){
       string1+=`, `
     }
+    if(cart.length==2){
+      string+=` `
+    }
     if(cart.length-i==(cart.length-2)){
       string1+=`and `
     }
