@@ -29,11 +29,11 @@ function viewCart() {
 
   for(let i=cart.length;i>0;i--){
     string1+=`${Object.keys(cart[cart.length-i])} at $${Object.values(cart[cart.length-i])}`
-    if(i==3){
+    if(cart.length-i<(cart.length)){
       string1+=`, `
     }
     if(cart.length-i==(cart.length-2)){
-      string1+=` and `
+      string1+=`and `
     }
 
   }
