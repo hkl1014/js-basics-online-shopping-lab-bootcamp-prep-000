@@ -16,8 +16,7 @@ var test= new Object();
 test[item]=Math.floor(Math.random()*100);
 cart.push(test);
 console.log(`${item} has been added to your cart.`);
-Object.assign(cart,{item: Math.floor(Math.random()*100)});
-console.log(`${cart.item} has been added to your cart.`);
+
 
 return cart
 }
@@ -29,7 +28,7 @@ function viewCart() {
   if(cart.length==0){console.log("Your shopping cart is empty.")};
 
   for(let i=cart.length;i>0;i--){
-    string1+=`${[Object.keys(cart[cart.length-i])]} at $${Object.values(cart[cart.length-i])}.`
+    string1+=`${Object.keys(cart[cart.length-i])} at $${Object.values(cart[cart.length-i])}.`
   }
 }
 
