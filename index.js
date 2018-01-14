@@ -33,7 +33,7 @@ function viewCart() {
       string1+=` and `
     }
   }
-string+=`.`
+string1+=`.`
   console.log(string1);
 }
 
