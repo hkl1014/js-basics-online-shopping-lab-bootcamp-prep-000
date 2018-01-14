@@ -33,7 +33,7 @@ function viewCart() {
       string1+=`, `
     }
     if(cart.length==2){
-      string+=` `
+      string1+=` `
     }
     if(cart.length-i==(cart.length-2)){
       string1+=`and `
