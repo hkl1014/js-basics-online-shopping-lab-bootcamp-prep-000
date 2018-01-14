@@ -24,7 +24,7 @@ return cart
 function viewCart() {
   // write your code here
   var string1 ="In your cart, you have ";
-  
+
   if(cart.length==0){console.log("Your shopping cart is empty.")};
 
   for(let i=cart.length;i>0;i--){
