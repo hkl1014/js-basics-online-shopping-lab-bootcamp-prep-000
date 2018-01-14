@@ -28,12 +28,12 @@ function viewCart() {
   if(cart.length==0){console.log("Your shopping cart is empty.")};
 
   for(let i=cart.length;i>0;i--){
-    string1+=`${Object.keys(cart[cart.length-i])} at $${Object.values(cart[cart.length-i])}.`
-    if(cart.length>1){
+    string1+=`${Object.keys(cart[cart.length-i])} at $${Object.values(cart[cart.length-i])}`
+    if(cart.length-i==(cart.length-2)){
       string1+=` and `
     }
   }
-
+string+=`.`
   console.log(string1);
 }
 
