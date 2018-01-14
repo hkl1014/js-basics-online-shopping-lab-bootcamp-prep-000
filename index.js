@@ -45,6 +45,9 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  for(let i=cart.length;i>0;i--){
+    if(cart[cart.length-i].hasOwnProperty(item)){cart.splice(cart.length-i,1)}
+  }
 }
 
 function placeOrder(cardNumber) {
